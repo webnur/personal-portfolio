@@ -1,0 +1,59 @@
+[
+    {
+        "id": 1,
+        "project_name": "Sales BD",
+        "image1": "https://i.ibb.co/XbSR5sq/projectone2.png",
+        "image2": "https://i.ibb.co/RTDT8nJ/projectone5.png",
+        "image3": "https://i.ibb.co/k0DZ3Xz/projectone6.png",
+        "image4": "https://i.ibb.co/LknNnYh/projectone3.png",
+        "image6": "https://i.ibb.co/6Psx7RX/projectone4.png",
+        "description": "",
+        "technology":[
+            "React Js",
+            "React Query",
+            "React hook form",
+            "express Js",
+            "Node Js",
+            "JSON Web token",
+            "firebase"
+        ]
+    },
+    {
+        "id": 2,
+        "project_name": "NUR KITCHEN",
+        "image1": "https://i.ibb.co/6WHps4M/projecttwo1.png",
+        "image2": "https://i.ibb.co/0XFs5gX/projecttwo2.png",
+        "image3": "https://i.ibb.co/V3nv9XS/projecttwo3.png",
+        "image4": "https://i.ibb.co/qxGynPK/projecttwo4.png",
+        "image5": "https://i.ibb.co/3v8HY8D/projecttwo5.png",
+        "description": "",
+        "technology":[
+            "React Js",
+            "React Query",
+            "React hook form",
+            "react photo view",
+            "express Js",
+            "Node Js",
+            "JSON Web token",
+            "firebase"
+        ]
+    },
+    {
+        "id": 3,
+        "project_name": "Hero Learning",
+        "image1": "https://i.ibb.co/k4JYvsM/projectthree1.png",
+        "image2": "https://i.ibb.co/n7fKnTQ/projectthree2.png",
+        "image3": "https://i.ibb.co/gvds0VT/projectthree3.png",
+        "image4": "https://i.ibb.co/rcCZDCr/projectthree4.png",
+        "description": "",
+        "technology":[
+            "React Js",
+            "React Query",
+            "React hook form",
+            "express Js",
+            "Node Js",
+            "JSON Web token",
+            "firebase"
+        ]
+    }
+]

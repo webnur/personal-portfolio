@@ -16,7 +16,7 @@ const ProjectCard = ({ project }) => {
             </figure>
             <div className="card-body">
                 <h2 className="card-title">{project_name}</h2>
-                <p>{title}</p>
+                <p className='font-semibold'>{title}</p>
                 <div className="card-actions justify-start">
                     <Link to={`details/${id}`} className="btn btn-primary">See Details</Link>
                 </div>

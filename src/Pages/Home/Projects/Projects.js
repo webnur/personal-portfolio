@@ -11,7 +11,6 @@ const Projects = () => {
         .then(data => setProjects(data))
     },[])
 
-    console.log(projects)
     return (
         <div id='projects'>
             <h2 className="text-3xl text-center my-10 font-bold">My Projects</h2>

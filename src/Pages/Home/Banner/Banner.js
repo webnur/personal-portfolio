@@ -1,7 +1,9 @@
 import React from 'react';
 import SocialMedia from '../../Shared/SocialMedia/SocialMedia';
 
-import resume from '../../../assets/resume/resume.pdf'
+import resume from '../../../assets/resume/resume.pdf';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
+import 'react-photo-view/dist/react-photo-view.css';
 
 const Banner = () => {
     const onButtonClick = () => {
@@ -34,7 +36,12 @@ const Banner = () => {
                 </div>
 
                 <div className="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
-                    <img className="w-full h-full lg:max-w-3xl" src={"https://www.bigscal.com/wp-content/uploads/2022/09/Features-of-Mern-stack-development-services-You-Should-Know.png"} alt="Catalogue-pana.svg" />
+
+                    <PhotoProvider>
+                        <PhotoView src={"https://www.bigscal.com/wp-content/uploads/2022/09/Features-of-Mern-stack-development-services-You-Should-Know.png"}>
+                        <img className="w-full h-full lg:max-w-3xl" src={"https://www.bigscal.com/wp-content/uploads/2022/09/Features-of-Mern-stack-development-services-You-Should-Know.png"} alt="Catalogue-pana.svg" />
+                        </PhotoView>
+                    </PhotoProvider>
                 </div>
             </div>
         </div>

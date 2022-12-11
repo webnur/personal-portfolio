@@ -1,22 +1,27 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 
-const ProjectCard = ({project}) => {
-    console.log(project)
-    const {name, image1, id} = project;
-    const singleProject = id => {
-        console.log(id)
-    }
+const ProjectCard = ({ project }) => {
+    const { project_name, image1, title, id } = project;
+
     return (
         <div className="card card-compact  bg-base-100 shadow-xl">
-        <figure><img src={image1} className='w-full h-[200px] p-2 rounded' alt="Shoes" /></figure>
-        <div className="card-body">
-            <h2 className="card-title">{name}</h2>
-            <p>a full stack used car selling application</p>
-            <div className="card-actions justify-start">
-                <button className="btn btn-primary" onClick={() => singleProject(project)}>See Details</button>
+            <figure>
+                <PhotoProvider>
+                    <PhotoView src={image1}>
+                        <img src={image1} className='w-full h-[200px] p-2 rounded' alt="Shoes" />
+                    </PhotoView>
+                </PhotoProvider>
+            </figure>
+            <div className="card-body">
+                <h2 className="card-title">{project_name}</h2>
+                <p>{title}</p>
+                <div className="card-actions justify-start">
+                    <Link to={`details/${id}`} className="btn btn-primary">See Details</Link>
+                </div>
             </div>
         </div>
-    </div>
     );
 };
 

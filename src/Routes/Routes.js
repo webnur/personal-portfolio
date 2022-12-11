@@ -15,7 +15,7 @@ const router = createBrowserRouter([
             {
                 path: '/details/:id',
                 element: <ProjectDetails></ProjectDetails>,
-                loader: ({params}) => fetch(`http://localhost:5000/details/${params.id}`)
+                loader: ({params}) => fetch(`https://portfolio-server-delta.vercel.app/details/${params.id}`)
             }
         ]
     }

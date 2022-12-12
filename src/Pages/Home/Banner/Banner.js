@@ -1,5 +1,6 @@
 import React from 'react';
 import SocialMedia from '../../Shared/SocialMedia/SocialMedia';
+import Typewriter from 'typewriter-effect';
 
 import resume from '../../../assets/resume/resume.pdf';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
@@ -23,15 +24,37 @@ const Banner = () => {
 
 
     return (
-    <div className="container px-6 py-8 mx-auto" >
+        <div className="container px-6 py-8 mx-auto" >
             <div className="items-center lg:flex">
                 <div className="w-full lg:w-1/2">
                     <div className="lg:max-w-lg">
-                        <h1 className="text-3xl font-semibold text-gray-800 dark:text-white lg:text-4xl">Hi, I'm Nurul Islam <br /> Junior MERN Stact developer</h1>
+                        <h1 className="text-3xl font-semibold text-gray-800 dark:text-white lg:text-4xl">
+                            <Typewriter
+                                options={{
+                                    strings: [`Hi, I'm Nurul Islam <br /> Junior MERN Stack developer`],
+                                    autoStart: true,
+                                    loop: true,
+                                }}
+                                onInit={(typewriter) => {
+                                    typewriter.typeString(`Hi, I'm Nurul Islam <br /> Junior MERN Stack developer`)
+                                        .callFunction(() => {
+                                            console.log('String typed out!');
+                                        })
+                                        .pauseFor(2500)
+                                        .deleteAll()
+                                        .callFunction(() => {
+                                            console.log('All strings were deleted');
+                                        })
+                                        .pasteString(`Hi, I'm Nurul Islam <br /> Junior MERN Stack developer`)
+                                        .start();
+                                }}
+                            />
+
+                        </h1>
 
                         <SocialMedia></SocialMedia>
 
-                        <button className="w-full px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-blue-600 rounded-md lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500 font-semibold"  onClick={onButtonClick}>Download Resume</button>
+                        <button className="w-full px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-blue-600 rounded-md lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500 font-semibold" onClick={onButtonClick}>Download Resume</button>
                     </div>
                 </div>
 
@@ -39,7 +62,7 @@ const Banner = () => {
 
                     <PhotoProvider>
                         <PhotoView src={"https://www.bigscal.com/wp-content/uploads/2022/09/Features-of-Mern-stack-development-services-You-Should-Know.png"}>
-                        <img className="w-full h-full lg:max-w-3xl" src={"https://www.bigscal.com/wp-content/uploads/2022/09/Features-of-Mern-stack-development-services-You-Should-Know.png"} alt="Catalogue-pana.svg" />
+                            <img className="w-full h-full lg:max-w-3xl" src={"https://www.bigscal.com/wp-content/uploads/2022/09/Features-of-Mern-stack-development-services-You-Should-Know.png"} alt="Catalogue-pana.svg" />
                         </PhotoView>
                     </PhotoProvider>
                 </div>

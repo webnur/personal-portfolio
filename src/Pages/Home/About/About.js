@@ -2,8 +2,8 @@ import React from 'react';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 const About = () => {
     return (
-        <div className='container mx-auto' id='about'>
-            <h2 className="text-3xl text-center my-6 font-bold">About Me</h2>
+        <div className='container mx-auto py-16' id='about'>
+            <h2 className="text-3xl text-center mb-6 font-bold">About Me</h2>
 
             <div className="hero bg-base-200 p-6">
                 <div className="hero-content flex-col lg:flex-row">
